@@ -1,7 +1,7 @@
 # Grameen Sahayak: Phone-based Question Answering with ChatGPT
 
 Grameen Sahayak is a cutting-edge phone-call based Hindi question answering system, leveraging the power of OpenAI's GPT 3.5 (ChatGPT).
-
+This project won 3rd place in BlackRock BlackKnight Hackathon
 ## Use Case
 
 Grameen Sahayak offers a seamless user experience through a hotline where users can verbally ask their questions. Our system promptly responds by sending SMS answers in Hindi to their registered phone numbers, typically within 20-30 seconds.
