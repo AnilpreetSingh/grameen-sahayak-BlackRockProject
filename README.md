@@ -1,6 +1,7 @@
-grameen-sahayak is a phone-call based hindi question answering system, developed on top of OpenAi's GPT 3.5 (ChatGPT).
-**Use case**- Users can call the hotline and ask their questions by just verbally speaking the question, their questions are answered in the hindi via SMS sent to their phone number in only 20-30 seconds.
-**How Our System Works**- 
+##grameen-sahayak is a phone-call based hindi question answering system, developed on top of OpenAi's GPT 3.5 (ChatGPT).
+###Use case- 
+Users can call the hotline and ask their questions by just verbally speaking the question, their questions are answered in the hindi via SMS sent to their phone number in only 20-30 seconds.
+###How Our System Works- 
 1. In the protoype, The user has to only call on a designated phone number and ask thier question.
 2. We have installed _DriveSync_ app on the android phone where the call is made, it automatically pushes the call recording to _google drive_.
 3. The call recording is automatically fetched by _Google Drive Windows App_ to G: drive.
@@ -13,7 +14,7 @@ grameen-sahayak is a phone-call based hindi question answering system, developed
 
 ![WhatsApp Image 2023-08-20 at 12 40 41](https://github.com/AnilpreetSingh/grameen-sahayak-BlackRockProject/assets/90110629/80b17638-7ddf-4b89-b0bb-963f86e3a0c5)
 
-**How to run on your system**-
+###How to run on your system-
   Install DriveSync app on android phone and sync call recordings with your google drive (make sure all calls are recorded by default)
   Install Google Drive on server machine
   Get API keys from OpenAI and Twilio (OpenAI API is paid)
@@ -23,7 +24,7 @@ grameen-sahayak is a phone-call based hindi question answering system, developed
       pip install twilio
       pip install gTTS
       pip install soundfile
-**Future **-
+###Future -
   Crux- We aim to make the system multilingual, support multiple calls at the same time and get response as an incoming call.
     1. We aim to use twilio's paid version for a virtual phone number so that multiple calls will be picked up and recorded on their servers.
     2. Multilingual support is easy to address as GPT 3.5/4 understands almost all languages, Google Text-to-speech API call needs to be modified to automatically detect the recording call language and transcribe it.
