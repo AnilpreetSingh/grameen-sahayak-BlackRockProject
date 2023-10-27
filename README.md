@@ -1,10 +1,10 @@
-# Grameen Sahayak: Phone Call Question Answering with ChatGPT
+# Grameen Sahayak: Phone Call Question Answering with GPT
 
-Grameen Sahayak is a cutting-edge phone-call based Hindi question answering system, leveraging the power of OpenAI's GPT 3.5 (ChatGPT).
+Grameen Sahayak is a multilingual phone-call based personal assistant or search engine, leveraging the power of OpenAI's GPT 3.5 (ChatGPT)/ GPT 4 and speech recognition.
 This project won 3rd place in BlackRock BlackKnight Hackathon
-## Use Case
+## How to Use
 
-Grameen Sahayak offers a seamless user experience through a hotline where users can verbally ask their questions. Our system promptly responds by sending SMS answers in Hindi to their registered phone numbers, typically within 20-30 seconds.
+Grameen Sahayak offers a seamless user experience through a hotline where users can call and ask their question. Our system then promptly responds by sending the answer back to user in SMS, within 20-30 seconds.
 
 ## How Our System Works
 
@@ -14,7 +14,7 @@ Grameen Sahayak offers a seamless user experience through a hotline where users 
 4. The heart of the system, the `run.py` Python script, is executed, initiating the `scrapeDrive.py` script.
 5. `scrapeDrive.py` scans through the call recording folder, selecting the latest .mp3 recording and its associated phone number for processing.
 6. The `Answering.py` script transcribes the .mp3 file into a .wav file, utilizing the Google Web Speech API via the `speech_recognizer` Python module.
-7. Transcribed speech, now in Devanagri script, is then presented as a query to the OpenAI GPT 3.5 API.
+7. Transcribed speech, now in Devanagri script, is then presented as a query to the OpenAI GPT API.
 8. GPT 3.5 responds in Hindi, and the answer is stored in the current folder as `response.txt`.
 9. To deliver the response, the `twilio_call.py` script loads `response.txt` along with the phone number. Using the Twilio API, the response is sent back to the user's phone.
 
@@ -25,7 +25,7 @@ Grameen Sahayak offers a seamless user experience through a hotline where users 
 To set up and run Grameen Sahayak:
 
 1. Install and configure DriveSync on your Android phone to synchronize call recordings with Google Drive (ensure call recording is enabled).
-2. Install Google Drive on your server machine to access the synchronized call recordings.
+2. Install Google Drive on your server machine to access the synchronized call recordings from local google drive folder.
 3. Obtain API keys from OpenAI and Twilio (note that OpenAI's API is a paid service).
 4. Install necessary Python modules using the following commands:
    ```bash
