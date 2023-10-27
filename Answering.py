@@ -34,8 +34,9 @@ def recognize_hindi_speech(AUDIO_FILE):
         return None
     
 def chatgpt(userQues):
+    usingModel="gpt-4" # or "gpt-3.5-turbo"
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+        model=usingModel,
         messages=[{"role":"user", "content":userQues}],
     )
     ans = response.choices[0].message.content
